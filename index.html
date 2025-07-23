@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>XingOS 7</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="desktop">
+    <img src="assets/wallpaper.jpg" id="wallpaper" alt="Fundo XP atualizado">
+    <div id="icon-xing-explorer" class="desktop-icon" onclick="abrirJanela('Xing Explorer')">
+      <img src="assets/browser-icon.png" alt="Xing Explorer">
+      <span>Xing Explorer<br>2.91.8.70</span>
+      <div id="icon-painel" class="desktop-icon" onclick="abrirJanela('painel')">
+  <img src="assets/control-icon.png" alt="Painel de Controle">
+  <span>Painel de Controle</span>
+    </div>
+    <div id="taskbar">🔘 Iniciar | 🧭 XingOS 7 | 🕒 19:47 (atrasado)</div>
+  </div>
+
+  <div id="janela-explorer" class="janela oculto">
+    <div class="janela-topo">🧭 Xing Explorer 2.91.8.70 <button onclick="fecharJanela('janela-explorer')">✖</button></div>
+    <div class="janela-corpo">
+      <input type="text" placeholder="Digite a URL reversa..." />
+      <button onclick="simularNavegacao()">Ir</button>
+      <p>Atualizado silenciosamente desde 2008. Compatível apenas com realidade alternativa.</p>
+    </div>
+  </div>
+</body>
+</html>
+<div id="icon-painel" class="desktop-icon" onclick="abrirJanela('painel')">
+  <img src="assets/control-icon.png" alt="Painel de Controle">
+  <span>Painel de Controle</span>
+</div>
+<div id="janela-desinstalar" class="janela oculto">
+  <div class="janela-topo">🚫 Desinstalar Aplicativos <button onclick="fecharJanela('janela-desinstalar')">✖</button></div>
+  <div class="janela-corpo">
+    <p>Nenhum programa quer ir embora. Todos se apegaram ao seu disco C:.</p>
+  </div>
+</div>
+
+<div id="janela-avaliar" class="janela oculto">
+  <div class="janela-topo">📊 Avaliar PC <button onclick="fecharJanela('janela-avaliar')">✖</button></div>
+  <div class="janela-corpo">
+    <p>Resultado: Seu PC está... emocionalmente instável, mas funcional. ✨</p>
+  </div>
+</div>
+
+<div id="janela-defender" class="janela oculto">
+  <div class="janela-topo">🛡️ XingOS Defender <button onclick="fecharJanela('janela-defender')">✖</button></div>
+  <div class="janela-corpo">
+    <p>🦠 Nenhum vírus encontrado.<br>🥴 Isso não significa que está tudo bem.</p>
+  </div>
+</div>
+
+<div id="janela-update" class="janela oculto">
+  <div class="janela-topo">🔄 XingOS Update <button onclick="fecharJanela('janela-update')">✖</button></div>
+  <div class="janela-corpo">
+    <p>📦 Última versão disponível: <strong>XingOS 10 Reverso</strong></p>
+    <button onclick="alert('Atualização iniciada! Prepare-se para o caos moderno.')">Atualizar agora</button>
+  </div>
+</div>
